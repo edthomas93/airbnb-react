@@ -1,11 +1,12 @@
 import React from "react";
+import "./flat.css";
 
 class Flat extends React.Component {
   render() {
     return (
-      <div>
-        <div class="flat"></div>
-        <div></div>
+      <div className="flat">
+        <div className="flat-picture"></div>
+        <div className="flat-title"></div>
       </div>
     );
   }
