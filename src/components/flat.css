@@ -1,6 +1,7 @@
 .flat {
-
-}
+  flex-basis: calc(50% - 20px); /* 50% width looks bad as it is all joined */
+  margin: 10px; /* so 10px margin leads to it being split up, but this */
+} /* makes the pictures go to multiple lines, so 10px * 2 = 20px is subtracted */
 
 .flat-picture {
   height: 200px;
@@ -10,5 +11,5 @@
 
 .flat-title {
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 700;
 }

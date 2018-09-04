@@ -1,28 +1,22 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.main {
+  flex-basis: 60%; /* main will take 60% of the width */
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.map {
+  flex-grow: 1; /* maps take the remaining 40% of the screen width */
+  height: 100vh; /* take 100% of the view height */
+  top: 0;
+  position: sticky; /* doesn't scroll the map when the flats are scrolled */
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.flats {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
