@@ -13,10 +13,12 @@ class App extends Component {
   componentDidMount(){
     const url = "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json";
     fetch(url) //AJAX
-      .then(response => response.json()) //converts the raw string from the request into json
-      .then((data) => {
-        console.log(data);
+    .then(response => response.json()) //converts the raw string from the request into json
+    .then((data) => {
+      this.setState({
+        flats: data
       })
+    })
   }
 
   render() {
